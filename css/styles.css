@@ -719,7 +719,7 @@ margin-right: 8px;
 }
 
 .modal-form-submit {
-    min-width: 169px px;
+    min-width: 169px;
     align-self: center;
     padding: 16px 32px;
     border: 1px;
@@ -749,32 +749,37 @@ margin-right: 8px;
   flex-direction: column;
 }
 
-.footer-form-field{
+/* .footer-form-field{
   margin-bottom: 8px;
+} */
+.mail-buttom {
+display: flex;
+gap: 24px;
 }
-.imput-footer-sub {
+
+.footer-form-input-wrap{  
   display: block;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.04em;
-  color: var(--subtle-text);
-  margin-bottom: 8px;
-}
-.footer-form-input-wrap{  display: block;
   position: relative;}
 
 .footer-form-input-desc {
-  position: absolute;
   display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.04em;
-  color: var(--subtle-text);
-  margin-bottom: 8px;}
+  color: var(--white-background);
+  margin-bottom: 16px;}
 
-.imput-foorer-text {
+  .footer-form-input-desc::placeholder{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  margin-bottom: 16px;}
+  
+
+/* .imput-foorer-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -782,21 +787,24 @@ margin-right: 8px;
   letter-spacing: 0.02em;
   color: var(--white-background);
   margin-bottom: 16px;
-}
+} */
 .footer-form-input {
-  width: 100%;
+  width: 264px;
   height: 40px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
+  border: 1px solid var(--white-background);
   border-radius: 4px;
-  padding-left: 38px;
-  color: rgba(46, 47, 66, 0.4);
+  padding: 8px 16px;
+  outline: none; 
+  color: var(--white-background);
+  background-color: var(--navy-blue);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-form-submit {
-  min-width: 169px px;
+
+  min-width: 169px;
   align-self: center;
-  padding: 16px 32px;
+  padding: 8px 24px;
   border: 1px;
   border-radius: 4px;
   background: #4d5ae5;
@@ -804,8 +812,9 @@ margin-right: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: inline-block;
+  display: flex;
   align-items: center;
+  justify-content: center;
   letter-spacing: 0.04em;
   color: var(--white-background);
   background-color: var(--primary-brand);
@@ -815,3 +824,8 @@ margin-right: 8px;
 .footer-form-submit,
 .footer-form-submit{
   background-color: var(--pressed-state);}
+
+  .footer-icon-telgr{
+    fill: var(--white-background);
+    margin-left: 16px;
+  }
